@@ -1,100 +1,92 @@
-# 🥚 Golden_Egg - ERP Lite para Empresas Avícolas
+# 🥚 Golden_Egg - ERP Lite for Poultry Companies
 
-*Golden_Egg* es un sistema ERP Lite desarrollado para digitalizar y optimizar los procesos clave de una empresa avícola dedicada a la comercialización y distribución de huevos. Está construido con una arquitectura de microservicios utilizando FastAPI en el backend y Angular en el frontend, con despliegue en contenedores Docker y CI/CD a través de GitHub Actions.
+*Golden_Egg* is a Lite ERP system developed to digitize and optimize key processes of a poultry company dedicated to the commercialization and distribution of eggs. It is built with a microservices architecture using FastAPI for the backend and Angular for the frontend, deployed with Docker containers and CI/CD through GitHub Actions.
 
----
 
-## 🚀 Objetivo General
+## 🚀 General Objective
 
-Desarrollar un sistema ERP Lite con arquitectura de microservicios en Python (FastAPI) que permita gestionar de forma integral procesos de negocio como: clientes, inventario, facturación, usuarios y reportes financieros.
+Develop a Lite ERP system with a microservices architecture in Python (FastAPI) that allows for comprehensive management of business processes such as: customers, inventory, billing, users, and financial reports.
 
----
 
-## 🎯 Objetivos Específicos
+## 🎯 Specific Objectives
 
-- Gestionar usuarios con autenticación y control de roles (admin, empleado).
-- Controlar inventario de huevos por proveedor, entrada y salida.
-- Administrar pedidos, facturación y pagos.
-- Generar reportes financieros automáticos.
-- Proveer una interfaz web moderna y responsiva usando Angular.
+- Manage users with authentication and role control (admin, employee).
+- Control egg inventory by supplier, including entries and exits.
+- Manage orders, invoicing, and payments.
+- Automatically generate financial reports.
+- Provide a modern and responsive web interface using Angular.
 
----
 
-## ⚙️ Tecnologías Utilizadas
+## ⚙️ Technologies Used
 
-| Tecnología       | Descripción                                |
+| Technology       | Description                                |
 |------------------|---------------------------------------------|
-| FastAPI          | Backend RESTful                            |
-| Angular          | Frontend moderno                           |
-| MySQL            | Base de datos relacional                   |
-| Docker           | Contenedores y orquestación                |
-| GitHub Actions   | Integración y despliegue continuo (CI/CD) |
-| JWT              | Autenticación segura                       |
+| FastAPI          | RESTful Backend                            |
+| Angular          | Modern Frontend                            |
+| MySQL            | Relational Database                        |
+| Docker           | Containers and Orchestration               |
+| GitHub Actions   | Continuous Integration and Deployment (CI/CD) |
+| JWT              | Secure Authentication                     |
 
----
 
-## 🧱 Arquitectura del Sistema
+## 🧱 System Architecture
 
-El sistema está dividido en los siguientes microservicios:
+The system is divided into the following microservices:
 
-- *Servicio de Autenticación*
-- *Servicio de Clientes y Pedidos*
-- *Servicio de Productos e Inventario*
-- *Servicio de Pagos y Facturación*
-- *Servicio de Reportes*
-- *Frontend Angular* (Desplegado de forma independiente)
+- *Authentication Service*
+- *Customer and Order Service*
+- *Product and Inventory Service*
+- *Payments and Billing Service*
+- *Reports Service*
+- *Angular Frontend* (Deployed independently)
 
-## 🧪 Pruebas
 
-- Pruebas realizadas con *Postman*.
-- Colecciones organizadas por microservicio.
-- Validación de endpoints: login, crear orden, consultar stock, etc.
+## 🧪 Testing
 
----
+- Tests conducted with *Postman*.
+- Collections organized by microservice.
+- Endpoint validation: login, create order, check stock, etc.
 
-## 🔐 Seguridad
 
-- Autenticación mediante *JWT*.
-- Control de acceso basado en roles (admin, empleado) tanto en backend como frontend.
+## 🔐 Security
 
----
+- Authentication using *JWT*.
+- Role-based access control (admin, employee) enforced on both backend and frontend.
 
-## 📦 Despliegue
 
-- Orquestación con *Docker Compose*.
-- CI/CD con *GitHub Actions*.
-- Backend y frontend desplegados como servicios independientes.
+## 📦 Deployment
 
----
+- Orchestration with *Docker Compose*.
+- CI/CD with *GitHub Actions*.
+- Backend and frontend deployed as independent services.
 
-## 📈 Metodología de Desarrollo
 
-Se utilizó *SCRUM* como metodología ágil:
+## 📈 Development Methodology
 
-- Sprints semanales
-- Reuniones diarias (dailies), de planificación, revisión y retrospectiva
-- Gestión de tareas con *Trello*
-- Historias de usuario priorizadas en backlog del producto
+*SCRUM* was used as the agile methodology:
 
----
+- Weekly sprints.
+- Daily standups, planning, review, and retrospective meetings.
+- Task management with *Trello*.
+- User stories prioritized in the product backlog.
 
-## 🧑‍💻 Equipo de Desarrollo
 
-| Rol              | Nombre Completo           |
-|------------------|----------------------------|
-| Backend          | Joan Sebastián Sosa Bedoya |
-| DevOps           | Jilmar Said Veloza         |
-| DBA              | Pablo Garcés               |
-| QA               | Juan Diego Rojas           |
-| Frontend         | Esteban Pineda             |
-| Analista         | Felipe López               |
+## 🧑‍💻 Development Team
 
----
+| Role              | Full Name                   |
+|------------------|------------------------------|
+| Backend           | Joan Sebastián Sosa Bedoya  |
+| DevOps            | Jilmar Said Veloza          |
+| DBA               | Pablo Garcés                |
+| QA                | Juan Diego Rojas            |
+| Frontend          | Esteban Pineda              |
+| Analyst           | Felipe López                |
 
-## 📂 Diagramas del Sistema
 
-Incluye los siguientes diagramas en la carpeta /docs:
+## 📂 System Diagrams
 
-- Diagrama de Clases UML
-- Diagrama de Casos de Uso Principal
-- Casos de uso individuales: Login, Registrar, Crear Orden, Generar Reporte, Pagar
+Included in the /docs folder:
+
+- UML Class Diagram.
+- Main Use Case Diagram.
+- Individual Use Cases: Login, Register, Create Order, Generate Report, Make Payment.
