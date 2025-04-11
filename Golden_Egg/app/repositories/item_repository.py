@@ -1,4 +1,4 @@
-'''
+
 from sqlalchemy.orm import Session
 from app.models.item import Item
 from app.schemas.item import ItemCreate
@@ -14,4 +14,3 @@ def create_item(db: Session, item: ItemCreate):
 
 def get_item(db: Session, item_id: int):
     return db.query(Item).filter(Item.id == item_id).first()
-'''

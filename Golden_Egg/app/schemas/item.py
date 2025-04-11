@@ -1,4 +1,4 @@
-'''
+
 from pydantic import BaseModel
 
 
@@ -18,4 +18,4 @@ class ItemResponse(ItemBase):
 
     class Config:
         orm_mode = True
-'''
+
