@@ -7,6 +7,7 @@ class Egg(Base):
 
     id = Column(BigInteger, primary_key=True, index=True)
     color = Column(String)
+    price = Column(Double)
 
     type_id = Column(BigInteger, ForeignKey("type_egg.id"))
     # one to one

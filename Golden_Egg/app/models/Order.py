@@ -11,8 +11,6 @@ class Order(Base):
     state = Column(String)
 
     client_id = Column(BigInteger, ForeignKey("client.id"))
-    #one to one
-    client = relationship("Client", back_populates="order")
 
     #many to many
     eggs = relationship("Egg", secondary="order_egg", back_populates="order ")
