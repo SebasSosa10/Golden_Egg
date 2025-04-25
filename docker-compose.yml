@@ -50,7 +50,6 @@ services:
   api:
     build:
       context: ./Golden_Egg
-    container_name: api-golden-egg
     deploy:
       mode: replicated
       replicas: 4
